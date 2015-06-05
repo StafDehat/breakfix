@@ -1,8 +1,12 @@
 #!/bin/bash
 
 
-# Confirm this is CentOS/RHEL 6.x
+# Test pre-reqs
+#lsb_release
 
+# Confirm this is CentOS/RHEL 6.x
+DISTRO=$( lsb_release -r | awk '{print $2}' )
+VERSION=$( lsb_release -r | awk '{print $2}' )
 
 # Record the DIR in which this repo exists
 GITROOT=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd && cd $OLDPWD)
