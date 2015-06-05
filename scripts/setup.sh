@@ -9,7 +9,9 @@ httpd \
 git
 
 # Clone the breakfix repo
-git clone https://github.com/stafdehat/breakfix
+#git clone https://github.com/stafdehat/breakfix
+# Assume this repo was already cloned, since this script is within the repo
 
 # Download broken logrotate config
+
 
